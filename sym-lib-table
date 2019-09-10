@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name JACK_TRS)(type Legacy)(uri /home/yovan/Documents/electronics/kicad/lm386_headphones_amplifier/JACK_TRS.lib)(options "")(descr ""))
+)

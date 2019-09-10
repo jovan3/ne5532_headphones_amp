@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:ne5532_headphones_amp-cache
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -19,7 +20,7 @@ U 1 1 5BF94690
 P 3750 2300
 F 0 "U1" H 3750 2667 50  0000 C CNN
 F 1 "NE5532" H 3750 2576 50  0000 C CNN
-F 2 "" H 3750 2300 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3750 2300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3750 2300 50  0001 C CNN
 	1    3750 2300
 	1    0    0    -1  
@@ -30,7 +31,7 @@ U 2 1 5BF947AA
 P 3750 5050
 F 0 "U1" H 3750 5417 50  0000 C CNN
 F 1 "NE5532" H 3750 5326 50  0000 C CNN
-F 2 "" H 3750 5050 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3750 5050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3750 5050 50  0001 C CNN
 	2    3750 5050
 	1    0    0    -1  
@@ -41,7 +42,7 @@ U 3 1 5BF948D5
 P 3750 5050
 F 0 "U1" H 3708 5096 50  0000 L CNN
 F 1 "NE5532" H 3708 5005 50  0000 L CNN
-F 2 "" H 3750 5050 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3750 5050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3750 5050 50  0001 C CNN
 	3    3750 5050
 	1    0    0    -1  
@@ -91,17 +92,6 @@ F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4600 2600 50  
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:AudioJack3_Ground J1
-U 1 1 5BF95A8A
-P 1300 2750
-F 0 "J1" H 1304 3092 50  0000 C CNN
-F 1 "AudioJack3_Ground" H 1304 3001 50  0000 C CNN
-F 2 "" H 1300 2750 50  0001 C CNN
-F 3 "~" H 1300 2750 50  0001 C CNN
-	1    1300 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+9V #PWR0101
 U 1 1 5BF9A9EB
 P 1250 900
@@ -146,7 +136,7 @@ U 1 1 5BF9B004
 P 1800 1000
 F 0 "C3" H 1892 1046 50  0000 L CNN
 F 1 "100nF" H 1892 955 50  0000 L CNN
-F 2 "" H 1800 1000 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 1800 1000 50  0001 C CNN
 F 3 "~" H 1800 1000 50  0001 C CNN
 	1    1800 1000
 	1    0    0    -1  
@@ -157,7 +147,7 @@ U 1 1 5BF9B03C
 P 1800 1200
 F 0 "C4" H 1892 1246 50  0000 L CNN
 F 1 "100nF" H 1892 1155 50  0000 L CNN
-F 2 "" H 1800 1200 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 1800 1200 50  0001 C CNN
 F 3 "~" H 1800 1200 50  0001 C CNN
 	1    1800 1200
 	1    0    0    -1  
@@ -168,7 +158,7 @@ U 1 1 5BF9B4F0
 P 1450 1000
 F 0 "C1" H 1541 1046 50  0000 L CNN
 F 1 "100uF" H 1541 955 50  0000 L CNN
-F 2 "" H 1450 1000 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1450 1000 50  0001 C CNN
 F 3 "~" H 1450 1000 50  0001 C CNN
 	1    1450 1000
 	1    0    0    -1  
@@ -179,7 +169,7 @@ U 1 1 5BF9B564
 P 1450 1200
 F 0 "C2" H 1541 1246 50  0000 L CNN
 F 1 "100uF" H 1541 1155 50  0000 L CNN
-F 2 "" H 1450 1200 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1450 1200 50  0001 C CNN
 F 3 "~" H 1450 1200 50  0001 C CNN
 	1    1450 1200
 	1    0    0    -1  
@@ -215,23 +205,23 @@ Wire Wire Line
 Wire Wire Line
 	4600 2100 4600 2300
 $Comp
-L Device:R 4.7K1
+L Device:R R5
 U 1 1 5BF9CF0E
 P 4600 1550
-F 0 "4.7K1" H 4670 1596 50  0000 L CNN
-F 1 "R" H 4670 1505 50  0000 L CNN
-F 2 "" V 4530 1550 50  0001 C CNN
+F 0 "R5" H 4670 1596 50  0000 L CNN
+F 1 "4.7K" H 4670 1505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4530 1550 50  0001 C CNN
 F 3 "~" H 4600 1550 50  0001 C CNN
 	1    4600 1550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R 4.7K2
+L Device:R R6
 U 1 1 5BF9CF44
 P 4600 3000
-F 0 "4.7K2" H 4670 3046 50  0000 L CNN
-F 1 "R" H 4670 2955 50  0000 L CNN
-F 2 "" V 4530 3000 50  0001 C CNN
+F 0 "R6" H 4670 3046 50  0000 L CNN
+F 1 "4.7K" H 4670 2955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4530 3000 50  0001 C CNN
 F 3 "~" H 4600 3000 50  0001 C CNN
 	1    4600 3000
 	1    0    0    -1  
@@ -278,23 +268,23 @@ Connection ~ 4600 3200
 Wire Wire Line
 	4600 3200 4600 3250
 $Comp
-L Device:R_Small 10R1
+L Device:R_Small R9
 U 1 1 5BF9E09D
 P 5600 2100
-F 0 "10R1" H 5659 2146 50  0000 L CNN
-F 1 "R_Small" H 5659 2055 50  0000 L CNN
-F 2 "" H 5600 2100 50  0001 C CNN
+F 0 "R9" H 5659 2146 50  0000 L CNN
+F 1 "10R" H 5659 2055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5600 2100 50  0001 C CNN
 F 3 "~" H 5600 2100 50  0001 C CNN
 	1    5600 2100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small 10R2
+L Device:R_Small R10
 U 1 1 5BF9E0D9
 P 5600 2450
-F 0 "10R2" H 5659 2496 50  0000 L CNN
-F 1 "R_Small" H 5659 2405 50  0000 L CNN
-F 2 "" H 5600 2450 50  0001 C CNN
+F 0 "R10" H 5659 2496 50  0000 L CNN
+F 1 "10R" H 5659 2405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5600 2450 50  0001 C CNN
 F 3 "~" H 5600 2450 50  0001 C CNN
 	1    5600 2450
 	1    0    0    -1  
@@ -304,23 +294,23 @@ Wire Wire Line
 Wire Wire Line
 	5600 2550 5600 2600
 $Comp
-L Device:R 1K1
+L Device:R R3
 U 1 1 5BF9F957
 P 3250 2950
-F 0 "1K1" H 3320 2996 50  0000 L CNN
-F 1 "R" H 3320 2905 50  0000 L CNN
-F 2 "" V 3180 2950 50  0001 C CNN
+F 0 "R3" H 3320 2996 50  0000 L CNN
+F 1 "1K" H 3320 2905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3180 2950 50  0001 C CNN
 F 3 "~" H 3250 2950 50  0001 C CNN
 	1    3250 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 10uF1
+L Device:CP1 CP1
 U 1 1 5BF9FA00
 P 3250 3350
-F 0 "10uF1" H 3365 3396 50  0000 L CNN
-F 1 "CP1" H 3365 3305 50  0000 L CNN
-F 2 "" H 3250 3350 50  0001 C CNN
+F 0 "CP1" H 3365 3396 50  0000 L CNN
+F 1 "10u" H 3365 3305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3250 3350 50  0001 C CNN
 F 3 "~" H 3250 3350 50  0001 C CNN
 	1    3250 3350
 	1    0    0    -1  
@@ -333,7 +323,7 @@ U 1 1 5BFA0A29
 P 3950 2700
 F 0 "R1" V 3743 2700 50  0000 C CNN
 F 1 "10K" V 3834 2700 50  0000 C CNN
-F 2 "" V 3880 2700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3880 2700 50  0001 C CNN
 F 3 "~" H 3950 2700 50  0001 C CNN
 	1    3950 2700
 	0    1    1    0   
@@ -408,28 +398,6 @@ F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4600 5350 50  
 $EndComp
 Wire Wire Line
 	4600 4850 4600 5050
-$Comp
-L Device:R 4.7K3
-U 1 1 5BFA362B
-P 4600 4300
-F 0 "4.7K3" H 4670 4346 50  0000 L CNN
-F 1 "R" H 4670 4255 50  0000 L CNN
-F 2 "" V 4530 4300 50  0001 C CNN
-F 3 "~" H 4600 4300 50  0001 C CNN
-	1    4600 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R 4.7K4
-U 1 1 5BFA3631
-P 4600 5750
-F 0 "4.7K4" H 4670 5796 50  0000 L CNN
-F 1 "R" H 4670 5705 50  0000 L CNN
-F 2 "" V 4530 5750 50  0001 C CNN
-F 3 "~" H 4600 5750 50  0001 C CNN
-	1    4600 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4600 4450 4600 4500
 Wire Wire Line
@@ -470,23 +438,23 @@ Connection ~ 4600 5950
 Wire Wire Line
 	4600 5950 4600 6000
 $Comp
-L Device:R_Small 10R3
+L Device:R_Small R11
 U 1 1 5BFA364E
 P 5600 4850
-F 0 "10R3" H 5659 4896 50  0000 L CNN
-F 1 "R_Small" H 5659 4805 50  0000 L CNN
-F 2 "" H 5600 4850 50  0001 C CNN
+F 0 "R11" H 5659 4896 50  0000 L CNN
+F 1 "10R" H 5659 4805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5600 4850 50  0001 C CNN
 F 3 "~" H 5600 4850 50  0001 C CNN
 	1    5600 4850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small 10R4
+L Device:R_Small R12
 U 1 1 5BFA3654
 P 5600 5200
-F 0 "10R4" H 5659 5246 50  0000 L CNN
-F 1 "R_Small" H 5659 5155 50  0000 L CNN
-F 2 "" H 5600 5200 50  0001 C CNN
+F 0 "R12" H 5659 5246 50  0000 L CNN
+F 1 "10R" H 5659 5155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5600 5200 50  0001 C CNN
 F 3 "~" H 5600 5200 50  0001 C CNN
 	1    5600 5200
 	1    0    0    -1  
@@ -496,23 +464,23 @@ Wire Wire Line
 Wire Wire Line
 	5600 5300 5600 5350
 $Comp
-L Device:R 1K2
+L Device:R R4
 U 1 1 5BFA365C
 P 3250 5700
-F 0 "1K2" H 3320 5746 50  0000 L CNN
-F 1 "R" H 3320 5655 50  0000 L CNN
-F 2 "" V 3180 5700 50  0001 C CNN
+F 0 "R4" H 3320 5746 50  0000 L CNN
+F 1 "1K" H 3320 5655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3180 5700 50  0001 C CNN
 F 3 "~" H 3250 5700 50  0001 C CNN
 	1    3250 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 10uF2
+L Device:CP1 CP2
 U 1 1 5BFA3662
 P 3250 6100
-F 0 "10uF2" H 3365 6146 50  0000 L CNN
-F 1 "CP1" H 3365 6055 50  0000 L CNN
-F 2 "" H 3250 6100 50  0001 C CNN
+F 0 "CP2" H 3365 6146 50  0000 L CNN
+F 1 "10u" H 3365 6055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3250 6100 50  0001 C CNN
 F 3 "~" H 3250 6100 50  0001 C CNN
 	1    3250 6100
 	1    0    0    -1  
@@ -525,7 +493,7 @@ U 1 1 5BFA3669
 P 3950 5450
 F 0 "R2" V 3743 5450 50  0000 C CNN
 F 1 "10K" V 3834 5450 50  0000 C CNN
-F 2 "" V 3880 5450 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3880 5450 50  0001 C CNN
 F 3 "~" H 3950 5450 50  0001 C CNN
 	1    3950 5450
 	0    1    1    0   
@@ -567,8 +535,8 @@ L Device:R_POT_Dual RV1
 U 1 1 5BFAE467
 P 2150 2900
 F 0 "RV1" V 2196 2712 50  0000 R CNN
-F 1 "R_POT_Dual" V 2105 2712 50  0000 R CNN
-F 2 "" H 2400 2825 50  0001 C CNN
+F 1 "10K" V 2105 2712 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Dual_Horizontal" H 2400 2825 50  0001 C CNN
 F 3 "~" H 2400 2825 50  0001 C CNN
 	1    2150 2900
 	0    -1   -1   0   
@@ -578,15 +546,11 @@ Wire Wire Line
 Wire Wire Line
 	2250 2800 2350 2800
 Wire Wire Line
-	1500 2750 1900 2750
-Wire Wire Line
 	1900 2750 1900 2400
 Wire Wire Line
 	1900 2400 2250 2400
 Wire Wire Line
 	2250 2400 2250 2500
-Wire Wire Line
-	1500 2850 2250 2850
 Wire Wire Line
 	2250 2850 2250 3000
 Wire Wire Line
@@ -597,25 +561,12 @@ Wire Wire Line
 	2050 3150 2050 4950
 Wire Wire Line
 	2050 4950 3450 4950
-$Comp
-L Connector:AudioJack3_Ground J2
-U 1 1 5BFBB05C
-P 7400 2750
-F 0 "J2" H 7167 2771 50  0000 R CNN
-F 1 "AudioJack3_Ground" H 7167 2680 50  0000 R CNN
-F 2 "" H 7400 2750 50  0001 C CNN
-F 3 "~" H 7400 2750 50  0001 C CNN
-	1    7400 2750
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 2650 1800 2300
 Wire Wire Line
 	1800 2300 2350 2300
 Wire Wire Line
 	2350 2300 2350 2800
-Wire Wire Line
-	1500 2650 1800 2650
 Wire Wire Line
 	2350 2800 2350 3300
 Connection ~ 2350 2800
@@ -626,19 +577,13 @@ Wire Wire Line
 Text GLabel 7100 2650 0    50   Input ~ 0
 GND
 Wire Wire Line
-	7100 2650 7200 2650
-Wire Wire Line
 	5600 2250 6700 2250
 Wire Wire Line
 	6700 2250 6700 2750
 Wire Wire Line
-	6700 2750 7200 2750
-Wire Wire Line
 	5600 5000 6700 5000
 Wire Wire Line
 	6700 5000 6700 2850
-Wire Wire Line
-	6700 2850 7200 2850
 Text GLabel 3650 4700 1    50   Input ~ 0
 +9V
 Text GLabel 3650 5600 3    50   Input ~ 0
@@ -655,4 +600,119 @@ Wire Wire Line
 	3250 6250 3250 6350
 Wire Wire Line
 	3250 3500 3250 3600
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5D7966B4
+P 2990 1130
+F 0 "J3" H 3098 1411 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3098 1320 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2990 1130 50  0001 C CNN
+F 3 "~" H 2990 1130 50  0001 C CNN
+	1    2990 1130
+	1    0    0    -1  
+$EndComp
+Text GLabel 3270 1030 2    50   Input ~ 0
++9V
+Text GLabel 3270 1130 2    50   Input ~ 0
+GND
+Text GLabel 3270 1230 2    50   Input ~ 0
+-9V
+Wire Wire Line
+	3270 1230 3190 1230
+Wire Wire Line
+	3190 1130 3270 1130
+Wire Wire Line
+	3190 1030 3270 1030
+$Comp
+L Device:R R8
+U 1 1 5BFA3631
+P 4600 5750
+F 0 "R8" H 4670 5796 50  0000 L CNN
+F 1 "4.7K" H 4670 5705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4530 5750 50  0001 C CNN
+F 3 "~" H 4600 5750 50  0001 C CNN
+	1    4600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5BFA362B
+P 4600 4300
+F 0 "R7" H 4670 4346 50  0000 L CNN
+F 1 "4.7K" H 4670 4255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4530 4300 50  0001 C CNN
+F 3 "~" H 4600 4300 50  0001 C CNN
+	1    4600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L JACK_TRS:JACK_TRS_3PINS J1
+U 1 1 5D81B895
+P 1120 3480
+F 0 "J1" H 1140 3845 50  0000 C CNN
+F 1 "JACK_TRS_3PINS" H 1140 3754 50  0000 C CNN
+F 2 "lm386_headphones_amplifier:3.5mm_stereo_TRS_jack" H 1270 3355 50  0001 C CNN
+F 3 "" H 1270 3355 50  0000 C CNN
+	1    1120 3480
+	1    0    0    -1  
+$EndComp
+Text GLabel 1430 2650 0    50   Input ~ 0
+JACK_S
+Text GLabel 1430 2750 0    50   Input ~ 0
+JACK_R
+Text GLabel 1430 2850 0    50   Input ~ 0
+JACK_T
+Wire Wire Line
+	1430 2650 1800 2650
+Wire Wire Line
+	1430 2750 1900 2750
+Wire Wire Line
+	1430 2850 2250 2850
+Text GLabel 1625 3455 2    50   Input ~ 0
+JACK_S
+Text GLabel 1620 3355 2    50   Input ~ 0
+JACK_T
+Text GLabel 1610 3580 2    50   Input ~ 0
+JACK_R
+Wire Wire Line
+	1570 3355 1620 3355
+Wire Wire Line
+	1570 3455 1625 3455
+Wire Wire Line
+	1570 3580 1610 3580
+$Comp
+L JACK_TRS:JACK_TRS_3PINS J2
+U 1 1 5D8497F7
+P 7665 3360
+F 0 "J2" H 7685 3725 50  0000 C CNN
+F 1 "JACK_TRS_3PINS" H 7685 3634 50  0000 C CNN
+F 2 "lm386_headphones_amplifier:3.5mm_stereo_TRS_jack" H 7815 3235 50  0001 C CNN
+F 3 "" H 7815 3235 50  0000 C CNN
+	1    7665 3360
+	1    0    0    -1  
+$EndComp
+Text GLabel 7310 2650 2    50   Input ~ 0
+JACK_OUT_S
+Text GLabel 7310 2750 2    50   Input ~ 0
+JACK_OUT_R
+Text GLabel 7310 2850 2    50   Input ~ 0
+JACK_OUT_T
+Text GLabel 8270 3335 2    50   Input ~ 0
+JACK_OUT_S
+Text GLabel 8270 3460 2    50   Input ~ 0
+JACK_OUT_R
+Text GLabel 8275 3235 2    50   Input ~ 0
+JACK_OUT_T
+Wire Wire Line
+	8115 3235 8275 3235
+Wire Wire Line
+	8115 3335 8270 3335
+Wire Wire Line
+	8115 3460 8270 3460
+Wire Wire Line
+	7100 2650 7310 2650
+Wire Wire Line
+	6700 2750 7310 2750
+Wire Wire Line
+	6700 2850 7310 2850
 $EndSCHEMATC
